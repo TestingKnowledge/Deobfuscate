@@ -1,0 +1,19 @@
+{
+  "name": "lua-obfuscator-bot",
+  "version": "2.3.0",
+  "description": "Discord bot that obfuscates and deobfuscates (decodes) Lua/Luau scripts - WeAreDevs-compatible engine with string pool, Base-85 dictionaries, permutation and VM dispatcher analysis",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "node deobfuscator/test/test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "license": "MIT"
+}

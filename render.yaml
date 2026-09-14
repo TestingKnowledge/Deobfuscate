@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: lua-obfuscator-bot
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: node bot.js
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: PREFIX
+        value: .
+      - key: PORT
+        value: 3000
+      - key: MAX_FILE_KB
+        value: 2000
